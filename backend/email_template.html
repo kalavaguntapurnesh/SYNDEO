@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        height: 100%;
+        border-style: dotted;
+        width: 100%;
+        background-color: #f8f9f0;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-style: dotted;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .header h1 {
+        color: #333;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .content {
+        margin-bottom: 30px;
+      }
+
+      .content p {
+        margin: 0 0 10px;
+        line-height: 1.5;
+        text-align: center;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-style: dotted;
+      }
+
+      .button a {
+        border-radius: 40px;
+        cursor: pointer;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #007ae1;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .bottom p {
+        text-align: center;
+      }
+
+      .footer p {
+        color: #999;
+        font-size: 14px;
+        margin: 0;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+      .footer .footerOne {
+        text-align: center;
+      }
+      .footer .footerTwo {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Reset your password</h1>
+      </div>
+      <div class="content">
+        <p>This link will expire in 10 minutes.</p>
+        <p>If it wasn't done by you, please contact us immediately.</p>
+      </div>
+      <div class="button">
+        <a href="http://localhost:5173/resetPassword/${user._id}/${token}"
+          >Reset the password</a
+        >
+      </div>
+      <div class="bottom">
+        <p>Thanks for helping to keep Syndeo secure!</p>
+      </div>
+      <div class="footer">
+        <p class="footerOne">Best regards,</p>
+        <p class="footerTwo">Team Syndeo</p>
+      </div>
+    </div>
+  </body>
+</html>
